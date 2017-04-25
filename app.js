@@ -8,6 +8,7 @@ const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
 
 mongoose.connect('mongodb://localhost/blah');
+
 const app = express();
 
 // view engine setup
