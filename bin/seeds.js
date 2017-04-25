@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/blah');
 const Student = require('../models/student-model.js');
 
 // DATA WE ARE INSERTING
-const studentsInfo [
+const studentsInfo = [
   {
     firstName: 'Wadson',
     lastName: 'Fleurigene',
@@ -28,12 +28,12 @@ const studentsInfo [
 ];
 
 // Creating a connection
-Student.create(studentsInfo, (err, studentsDoc) => {
+Student.create(studentsInfo, (err, studentsDocs) => {
   if (err) {
     throw err;
   }
   // For each student we add, let me know in the console, bro.
-  studentsDocs.forEarch((oneStudent) => {
+  studentsDocs.forEach((oneStudent) => {
     console.log(`NEW STUDENT ${oneStudent.firstName} -> ${oneStudent._id}`);
   });
 });
