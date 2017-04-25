@@ -28,3 +28,7 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+
+# apple stsuff
+.DS_Store
+DS_Store
